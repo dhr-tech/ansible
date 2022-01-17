@@ -1,0 +1,17 @@
+---
+- name: show version and other user level commands
+  hosts: all
+  gather_facts: false
+  connection: local
+
+  tasks:
+    - name: Test reachability to 192.168.111.10 using default vrf
+      ios_ping:
+        dest: 192.168.111.10
+
+      register: print_output
+
+
+
+
+   
