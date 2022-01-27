@@ -5,13 +5,6 @@
   connection: local
 
   tasks:
-     - name: Create vlan
-       cisco.ios.ios_vlan:
-         vlan_id: 10
-         name: test-vlan
-         state: present
-
-
 
      - name: Add interfaces to VLAN
        cisco.ios.ios_vlan:
